@@ -19,3 +19,10 @@ export interface Topic {
     userData: UserData;
     updateData: (key: keyof UserData, value: any) => void;
   }
+
+  export interface PrimaryButtonProps {
+    title: string;
+    onPress: () => void;
+    disabled?: boolean;
+  }
+

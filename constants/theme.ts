@@ -10,7 +10,7 @@ export const COLORS = {
 };
 
 export const SPACING = {
-    s: 8,
+    s: 12,
     m: 16,
     l: 24,
     xl: 40,
