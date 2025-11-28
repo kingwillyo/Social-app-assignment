@@ -31,3 +31,11 @@ export interface Topic {
     disabled?: boolean;
   }
 
+  export interface AppInputProps {
+    label?: string;
+    placeholder?: string;
+    value: string;
+    onChangeText: (text: string) => void;
+    keyboardType?: "default" | "numeric" | "phone-pad";
+    autoFocus?: boolean;
+  }
