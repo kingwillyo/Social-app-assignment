@@ -4,7 +4,7 @@ import React from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
 
 export const AppInput: React.FC<AppInputProps> = (props) => (
-  <View style={styles.inputContainer}>
+  <View>
     {props.label && <Text style={styles.label}>{props.label}</Text>}
     <TextInput
       style={styles.input}
@@ -20,18 +20,19 @@ export const AppInput: React.FC<AppInputProps> = (props) => (
 );
 
 const styles = StyleSheet.create({
-  inputContainer: { marginBottom: SPACING.l },
   label: {
     color: COLORS.textSecondary,
-    marginBottom: SPACING.s,
     fontFamily: FONTS.regular,
   },
   input: {
-    backgroundColor: COLORS.surfaceLight,
-    padding: SPACING.m,
-    borderRadius: 12,
+    backgroundColor: COLORS.inputCard,
+    borderWidth: 1,
+    borderColor: COLORS.surfaceLight,
+    paddingHorizontal: 24,
+    borderRadius: 16,
     color: COLORS.textPrimary,
     fontSize: 16,
     fontFamily: FONTS.regular,
+    height: 56,
   },
 });

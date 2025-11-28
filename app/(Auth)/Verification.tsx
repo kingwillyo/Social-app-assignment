@@ -1,6 +1,6 @@
 import BackButton from "@/components/BackButton";
 import { CircleButton } from "@/components/CircleButton";
-import { COLORS, FONTS } from "@/constants/theme";
+import { COLORS, FONTS, SPACING } from "@/constants/theme";
 import { Background } from "@react-navigation/elements";
 import { router } from "expo-router";
 import React, { useRef, useState } from "react";
@@ -106,8 +106,7 @@ const styles = StyleSheet.create({
     fontWeight: "700",
     color: COLORS.textPrimary,
     textAlign: "center",
-    marginTop: 40,
-    marginBottom: 32,
+    marginBottom: SPACING.xxl,
     lineHeight: 32,
   },
   otpBox: {
@@ -163,7 +162,8 @@ const styles = StyleSheet.create({
   resendText: {
     marginTop: 0,
     color: COLORS.textPrimary,
-    fontSize: 14,
+    fontSize: 16,
+    fontWeight: 400,
     textAlign: "center",
     fontFamily: FONTS.regular,
   },
