@@ -81,7 +81,7 @@ const Clubs = () => {
     <Background style={styles.background}>
       <StatusBar barStyle={"light-content"} />
       <SafeAreaView style={{ flex: 1 }}>
-        <SkipButton onPress={() => router.push("/(Auth)/Welcome")} />
+        <SkipButton onPress={() => router.push("/(Auth)/Successful")} />
         <View style={styles.container}>
           <Text style={styles.title}>
             Here are some clubs you{"\n"}might enjoy. Tap to join a few
@@ -129,7 +129,7 @@ const Clubs = () => {
         <View style={styles.footer}>
           <PrimaryButton
             title="Let's go !"
-            onPress={() => router.push("/(Auth)/Welcome")}
+            onPress={() => router.push("/(Auth)/Successful")}
           />
         </View>
       </SafeAreaView>
@@ -155,8 +155,7 @@ const styles = StyleSheet.create({
     color: COLORS.textPrimary,
     textAlign: "center",
     lineHeight: 34,
-    marginBottom: SPACING.xl,
-    marginTop: SPACING.xl,
+    marginBottom: SPACING.xxl,
   },
   clubCard: {
     flexDirection: "row",
@@ -210,11 +209,10 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
   clubAddBtnSelected: {
-    backgroundColor: COLORS.primary,
-    borderColor: COLORS.primary,
+    backgroundColor: COLORS.white,
   },
   clubAddBtnTextSelected: {
-    color: COLORS.white,
+    color: COLORS.background,
   },
   footer: {
     marginHorizontal: SPACING.l,

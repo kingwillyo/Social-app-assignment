@@ -1,51 +1,80 @@
-# Welcome to your Expo app 👋
+# Social App Assignment – Expo/React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to the Social App! This repository demonstrates a job assignment for a modern, mobile-first onboarding and social experience built with Expo/React Native.
 
-## Get started
+## Stack / Tooling
 
-1. Install dependencies
+- **React Native (with Expo)**: Rapid mobile development, cross-platform iOS/Android
+- **expo-router**: File-system-based navigation, enables intuitive app structure
+- **TypeScript**: End-to-end static typing for maintainability
+- **expo-image-picker**: Image upload from the photo library (with proper permissions)
+- **react-native-safe-area-context**: Handles device notches and insets
+- **react-native-keyboard-aware-scroll-view**: Smooth handling of keyboard and inputs
+- **UserContext (React Context)**: Simple app-wide state (first name, last name, phone, topics, clubs, etc.)
+- **Modular Components**: Reusable components including Inputs, Buttons, Topic/Club selectors, and navigation helpers (Skip/Back)
+
+## Getting Started
+
+1. **Install dependencies:**
 
    ```bash
+   npx expo install
+   # or
    npm install
    ```
 
-2. Start the app
+2. **Start the project:**
 
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   Use your device (Expo Go), Android/iOS simulator, or web.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+3. **Image picker permissions** (first use):
+   On physical devices, Expo will ask for media permissions when uploading a photo. Grant when prompted.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## App Structure
 
-## Get a fresh project
+- `/app/(Auth)/` – All onboarding screens (Phone, Verification, Name, Username, Age, AddPhoto, Topics, Clubs, Successful)
+- `/components/` – Atom and molecule-level UI building blocks (Button, Input, etc.)
+- `/contexts/UserContext.tsx` – Centralized user state for onboarding (all fields, topics/clubs, etc.)
+- `/types/types.ts` – Type definitions for topics, clubs, props, and context
+- `/constants/theme.ts` – Color, font, and spacing constants for styling consistency
+- `/assets/` – Placeholder avatars, camera icon, and general static images
 
-When you're ready, run:
+## Notable Functionalities
 
-```bash
-npm run reset-project
-```
+- **Onboarding Flow:**
+  - Phone/country input, OPT step, names, username, age
+  - Add photo (with preview, Expo image picker)
+  - Choose up to 5 topics and 5 clubs (with logic for selection cap and UI feedback)
+  - Each step persists in `UserContext` for later access/validation
+  - Animated/button-based navigation and skip logic on each step
+- **No Backend Required:**
+  - All logic is client-only (stores selected data in React context). No networking or backend integration.
+- **Modern UI/UX:**
+  - Uses gradients, modern spacing, disabled/active widget feedback for buttons, themed components
+  - Dark-mode styled with appropriate contrast
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Things to Note
 
-## Learn more
+- **Assignment Scope:**
+  - Models are statically defined for topics and clubs (see `/types/types.ts` for shape)
+  - Club images are placeholders in `/assets/images/`
+  - No persistent storage, login, or API backend — focus was on UI, state, and flow
+- **Navigation:**
+  - Use the on-screen buttons or Expo Router links for progression through onboarding
+- **Linter:**
+  - The repo uses strong TypeScript typing. Minor style linter warnings may remain (e.g., import/exact-type usage)
 
-To learn more about developing your project with Expo, look at the following resources:
+## Demo/Test
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Open the onboarding flow, progress through all screens
+- Try image uploading
+- Select/deselect topics and clubs (enforcement of max 5, visual feedback)
+- Inspect app state in context for user values
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# Social-app-assignment
+**Good luck evaluating! Let me know if you need sample credentials or encounter any onboarding issues.**

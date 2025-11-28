@@ -1,4 +1,4 @@
-import { PrimaryButton } from "@/components/shared";
+import { PrimaryButton } from "@/components/PrimaryButton";
 import {SkipButton} from "@/components/SkipButton";
 import { COLORS, FONTS, SPACING } from "@/constants/theme";
 import { useUser } from "@/contexts/UserContext";
