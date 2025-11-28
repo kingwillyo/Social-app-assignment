@@ -75,6 +75,18 @@ Welcome to the Social App! This repository demonstrates a job assignment for a m
 - Select/deselect topics and clubs (enforcement of max 5, visual feedback)
 - Inspect app state in context for user values
 
+## Screenshots
+
+<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-11-28 at 22 39 03" src="https://github.com/user-attachments/assets/e01f2787-6aec-439c-8141-6148ae092d26" />
+<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-11-28 at 22 39 00" src="https://github.com/user-attachments/assets/7c6b37c6-27a5-42b0-956d-869851493d8e" />
+<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-11-28 at 22 38 56" src="https://github.com/user-attachments/assets/1699cca5-244b-44c7-be01-b2170de0c14b" />
+<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-11-28 at 22 38 53" src="https://github.com/user-attachments/assets/b0ba1e61-3cfd-4acd-ab1d-6d8664f35928" />
+<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-11-28 at 22 38 49" src="https://github.com/user-attachments/assets/afca7ccb-0928-4460-a679-a83ad0024d20" />
+<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-11-28 at 22 38 46" src="https://github.com/user-attachments/assets/7726f57c-cfc4-40b2-b181-d70818729516" />
+<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-11-28 at 22 38 42" src="https://github.com/user-attachments/assets/3201542e-8981-4ef3-bc54-7d71e6c3b400" />
+<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-11-28 at 22 38 38" src="https://github.com/user-attachments/assets/b8ed4034-95de-4332-9580-258e54549b1b" />
+<img width="1290" height="2796" alt="Simulator Screenshot - iPhone 16 Plus - 2025-11-28 at 22 39 05" src="https://github.com/user-attachments/assets/1d054a6a-641e-452b-874d-7e036c30492c" />
+
 ---
 
 **Good luck evaluating! Let me know if you need sample credentials or encounter any onboarding issues.**
