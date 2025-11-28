@@ -10,6 +10,7 @@ const initialState: UserData = {
   age: '',
   photo: null,
   topics: [],
+  clubs: [],
 };
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
