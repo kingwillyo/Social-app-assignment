@@ -92,7 +92,7 @@ const Username = () => {
           </View>
         </KeyboardAwareScrollView>
         <View style={styles.fabWrap} pointerEvents="box-none">
-          <CircleButton onPress={() => router.push("/(Auth)/Welcome")} />
+          <CircleButton onPress={() => router.push("/(Auth)/Age")} />
         </View>
       </SafeAreaView>
     </Background>

@@ -39,3 +39,7 @@ export interface Topic {
     keyboardType?: "default" | "numeric" | "phone-pad";
     autoFocus?: boolean;
   }
+
+  export interface SkipButtonProps {
+    onPress: () => void;
+  }

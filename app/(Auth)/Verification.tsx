@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     justifyContent: "center",
     backgroundColor: COLORS.inputCard,
-    marginBottom: 32,
+    marginBottom: SPACING.m,
     position: "relative",
     overflow: "hidden",
   },
@@ -166,6 +166,7 @@ const styles = StyleSheet.create({
     fontWeight: 400,
     textAlign: "center",
     fontFamily: FONTS.regular,
+    marginRight: 8,
   },
   resendLink: {
     color: COLORS.primary,
