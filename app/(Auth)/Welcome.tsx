@@ -2,6 +2,7 @@ import { View, Text, ImageBackground, StatusBar, StyleSheet, Image } from 'react
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { COLORS, FONTS, SPACING } from '@/constants/theme'
+import { PrimaryButton } from '@/components/PrimaryButton'
 
 const Welcome = () => {
   return (
@@ -11,8 +12,12 @@ const Welcome = () => {
             <View style={styles.container}>
                 <Text style={styles.title}>Welcome to the {'\n'}community 👋</Text>
                 <View style={styles.imageContainer}>
-                <Image style={styles.image} source={require('../../assets/images/welcomeimg.png')} />
-            </View>
+                    <Image style={styles.image} source={require('../../assets/images/welcomeimg.png')} />
+                </View>
+                <PrimaryButton 
+                    title='SignUp'
+                    onPress={() => {}}
+                />
             </View>
         </SafeAreaView>
     </ImageBackground>
