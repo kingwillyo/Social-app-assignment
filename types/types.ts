@@ -26,3 +26,8 @@ export interface Topic {
     disabled?: boolean;
   }
 
+  export interface CircleButtonProps {
+    onPress: () => void;
+    disabled?: boolean;
+  }
+
