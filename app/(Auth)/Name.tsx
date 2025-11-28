@@ -2,6 +2,7 @@ import { AppInput } from "@/components/AppInput";
 import BackButton from "@/components/BackButton";
 import { CircleButton } from "@/components/CircleButton";
 import { COLORS, FONTS, SPACING } from "@/constants/theme";
+import { useUser } from "@/contexts/UserContext";
 import { Background } from "@react-navigation/elements";
 import { router } from "expo-router";
 import React from "react";
@@ -10,8 +11,7 @@ import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const Name = () => {
-  const [firstName, setFirstName] = React.useState("");
-  const [lastName, setLastName] = React.useState("");
+  const { userData, updateData } = useUser();
 
   return (
     <Background style={styles.background}>
@@ -22,16 +22,16 @@ const Name = () => {
           <View style={styles.container}>
             <Text style={styles.title}>What&apos;s your full name ?</Text>
             <View style={styles.inputContainer}>
-                <AppInput
+              <AppInput
                 placeholder="First name"
-                value={firstName}
-                onChangeText={setFirstName}
-                />
-                <AppInput
+                value={userData.firstName}
+                onChangeText={(text) => updateData("firstName", text)}
+              />
+              <AppInput
                 placeholder="Last name"
-                value={lastName}
-                onChangeText={setLastName}
-                />
+                value={userData.lastName}
+                onChangeText={(text) => updateData("lastName", text)}
+              />
             </View>
             <Text style={styles.infoText}>
               People use real names on the app.
@@ -83,5 +83,5 @@ const styles = StyleSheet.create({
   inputContainer: {
     gap: SPACING.m,
     marginBottom: SPACING.m,
-  }
+  },
 });
